@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Shop</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></head>
+<body>
+    <!-- Navbar -->
+    <div class="header">GIFTOS</div>
+    <nav class="navbar-container">
+        <button class="menu-toggle" onclick="toggleMenu()"></button>
+        <ul class="nav-links">
+            <li style="background-color: white;"><a href="#home">HOME</a></li>
+            <li><a href="#card-sec">SHOP</a></li>
+            <li><a href="#why-to-use">WHY US</a></li>
+            <li><a href="#testimonial">TESTIMONIAL</a></li>
+            <li><a href="#footer">CONTACT US</a></li>
+        </ul>
+      
+        <div class="icons">
+            <li style="list-style-type:none; font-size: 18px;font-weight: bold;"><bold>Login</li></bold>
+            <a href="#">&#128100;</a>
+            <a href="#">&#128722;</a>
+            <a href="#">&#128269;</a>
+        </div>
+    </nav>
+    <!-- Carousel -->
+    <div class="carousel-container" id="home">
+        <div class="carousel" id="carousel">
+            <div class="carousel-item">
+                <div class="text-content">
+                    <h1>Welcome To Our Gift Shop</h1>
+                    <p>Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis.</p>
+                    <button class="contact-btn">CONTACT US</button>
+                </div>
+                <img src="./img/slider-img.png" alt="Shopping Girl">
+            </div>
+            <div class="carousel-item">
+                <div class="text-content">
+                    <h1>Best Gifts for You</h1>
+                    <p>Discover amazing gifts and surprises for your loved ones with our exclusive collection...</p>
+                    <button class="contact-btn">SHOP NOW</button>
+                </div>
+                <img src="./img/slider-img.png" alt="Gifts">
+            </div>
+            <div class="carousel-item">
+                <div class="text-content">
+                    <h1>Exclusive Offers</h1>
+                    <p>Get the best deals and discounts on our special gift collections today...</p>
+                    <button class="contact-btn">EXPLORE</button>
+                </div>
+                <img src="./img/slider-img.png" alt="Offers">
+            </div>
+        </div>
+        <button class="scroll-left-btn" onclick="prevSlide()">&#9664;--</button>
+        <button class="scroll-right-btn" onclick="nextSlide()">--&#9654;</button>
+    </div>
+    <!-- Card section  -->
+    <div class="container" id="card-sec">
+        <h2 class="heading">LATEST PRODUCTS</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <span class="product-badge">New</span>
+                <img class="product-image" src="./img/p1.png" alt="Ring">
+                <div class="product-name">Ring</div>
+                <div class="product-price">Price <span class="price-highlight">$200</span></div>
+            </div>
+            <div class="product-card">
+                <span class="product-badge">New</span>
+                <img class="product-image" src="./img/p2.png" alt="Watch">
+                <div class="product-name">Watch</div>
+                <div class="product-price">Price <span class="price-highlight">$300</span></div>
+            </div>
+            <div class="product-card">
+                <span class="product-badge">New</span>
+                <img class="product-image" src="./img/p3.png" alt="Teddy Bear">
+                <div class="product-name">Teddy Bear</div>
+                <div class="product-price">Price <span class="price-highlight">$110</span></div>
+            </div>
+            <div class="product-card">
+                <span class="product-badge">New</span>
+                <img class="product-image" src="./img/p4.png" alt="Watch">
+                <div class="product-name">Watch</div>
+                <div class="product-price">Price <span class="price-highlight">$300</span></div>
+            </div>
+            <div class="product-card">
+                <span class="product-badge">New</span>
+                <img class="product-image" src="./img/p5.png" alt="Watch">
+                <div class="product-name">Watch</div>
+                <div class="product-price">Price <span class="price-highlight">$300</span></div>
+            </div>
+            <div class="product-card">
+                <span class="product-badge">New</span>
+                <img class="product-image" src="./img/p6.png" alt="Watch">
+                <div class="product-name">Watch</div>
+                <div class="product-price">Price <span class="price-highlight">$300</span></div>
+            </div>
+            <div class="product-card">
+                <span class="product-badge">New</span>
+                <img class="product-image" src="./img/p7.png" alt="Watch">
+                <div class="product-name">Watch</div>
+                <div class="product-price">Price <span class="price-highlight">$300</span></div>
+            </div>
+            <div class="product-card">
+                <span class="product-badge">New</span>
+                <img class="product-image" src="./img/p8.png" alt="Flower Bouquet">
+                <div class="product-name">Flower Bouquet</div>
+                <div class="product-price">Price <span class="price-highlight">$45</span></div>
+            </div>
+        </div>
+        <button class="view-all-button">View All Products</button>
+    </div>
+    <!-- Banner Section  -->
+    <div class="banner-container">
+        <div class="banner-wrapper">
+            <div class="banner-image">
+                <img src="./img/saving-img.png" alt="Shopping Girl">
+            </div>
+            <div class="banner-text">
+                <h2 class="banner-heading">BEST SAVINGS ON <br> NEW ARRIVALS</h2>
+                <p class="banner-description">Qui ex dolore at repellat, quia neque doloribus omnis adipisci, ipsum eos odio fugit ut eveniet blanditiis praesentium totam non nostrum dignissimos nihil eius facere et eaque. Qui, animi obcaecati.</p>
+                <div class="banner-actions">
+                    <button class="btn-primary">Buy Now</button>
+                    <button class="btn-secondary">See More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Why Shop With Us Section-->
+    <section class="why-shop-section" id="why-to-use">
+        <h2 class="section-title">WHY SHOP WITH US</h2>
+        <div class="features-container">
+            <div class="feature-card">
+                <img src="./img/truck.svg" alt="Fast Delivery" class="feature-icon">
+                <h3 class="feature-title">Fast Delivery</h3>
+                <p class="feature-description">variations of passages of Lorem Ipsum available</p>
+            </div>
+            <div class="feature-card">
+                <img src="./img/free.svg" alt="Free Shipping" class="feature-icon">
+                <h3 class="feature-title">Free Shipping</h3>
+                <p class="feature-description">variations of passages of Lorem Ipsum available</p>
+            </div>
+            <div class="feature-card">
+                <img src="./img/high-quality.svg" alt="Best Quality" class="feature-icon">
+                <h3 class="feature-title">Best Quality</h3>
+                <p class="feature-description">variations of passages of Lorem Ipsum available</p>
+            </div>
+        </div>
+    </section>  
+
+     <!-- Gifts for yourloved ones Section -->
+      
+      <div class="gift-container">
+        <div class="gift-image-content">
+            <img src="./img/gifts.png" alt="Gifts and balloons">
+        </div>
+        <div class="gift-text-content">
+            <h1>GIFTS FOR YOUR <br>LOVED ONES</h1>
+            <p>Omnis ex nam laudantium odit illum harum, excepturi accusamus at corrupti, velit blanditiis unde perspiciatis, vitae minus culpa? Beatae at aut consequuntur porro adipisci aliquam eaque iste ducimus expedita accusantium?</p>
+            <div class="gift-buttons">
+                <button class="gift-buy-btn">Buy Now</button>
+                <button class="gift-see-more-btn">See More</button>
+            </div>
+        </div>
+    </div>
+    <!-- MAP SECTION & FORM SECTION -->
+<div class="body-1">
+    <h1 class="map-head">CONTACT US</h1>
+     <div class="contact-section">
+        <div class="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.5663407335833!2d78.16354029999998!3d11.219686999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babcfb5accea083%3A0x1b04eea5333f5daa!2sSDLC%20NAMAKKAL(Skill%20Development%20Learning%20Centre)!5e0!3m2!1sen!2sin!4v1742226576042!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div class="contact-form-container">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="tel" placeholder="Phone">
+            <textarea placeholder="Message" rows="4"></textarea>
+            <button>SEND</button>
+        </div>
+    </div>
+</div>
+<!-- Testimonial Section -->
+ <div class="body-2" id="testimonial">
+<div class="testimonial-section">
+    <h2>TESTIMONIAL</h2>
+    <div class="testimonial-slider" id="testimonialSlider">
+        <div class="testimonial-card">
+            <p class="testimonial-author">Brad Johns</p>
+            <p class="testimonial-role">Default model text</p>
+            <p>Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy, editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various</p>
+        </div>
+        <div class="testimonial-card">
+            <p class="testimonial-author">Morijorch</p>
+            <p class="testimonial-role">Default model text</p>
+            <p>editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various</p>
+        </div>
+        <div class="testimonial-card">
+            <p class="testimonial-author">Rochak</p>
+            <p class="testimonial-role">Default model text</p>
+            <p>Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="nav-button nav-prev" onclick="prevTestimonial()">&#9665;</button>
+        <button class="nav-button nav-next" onclick="nextTestimonial()">&#9655;</button>
+    </div>
+</div>
+</div>
+    <!-- Footer Section -->
+    <footer class="footer" id="footer">
+        <div class="social-icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>ABOUT US</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="footer-section newsletter">
+                <h3>Newsletter</h3>
+                <input type="email" placeholder="Enter your email">
+                <button>SUBSCRIBE</button>
+            </div>
+            <div class="footer-section">
+                <h3>NEED HELP</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="footer-section">
+                <h3>CONTACT US</h3>
+                <p>&#128205; Gb road 123 London UK</p>
+                <p>&#128222; +01 12345678901</p>
+                <p>&#128231; demo@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-line"></div>
+        <p>&copy; 2025 All Rights Reserved By Free Html Templates</p>
+    </footer>
+
+    <!-- end footer section  -->
+    <script src="./script.js"></script>
+</body>
+</html>
