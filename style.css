@@ -239,7 +239,7 @@ body {
   }
 
   .text-content {
-    margin-top: 250px;
+    margin-top: 300px;
     max-width: 90%;
     text-align: center;
   }
@@ -280,7 +280,7 @@ body {
   }
 
   .text-content {
-     margin-top: 200px;
+     margin-top: 300px;
     max-width: 100%;
     text-align: center;
   }
@@ -690,6 +690,7 @@ body {
   transition: all 0.3s ease;
 }
 .gift-buy-btn {
+  padding: 0px 30px;
   background-color: white;
   color: black;
 }
@@ -721,6 +722,7 @@ body {
       text-align: center;
   }
   .gift-text-content, .gift-image-content {
+    margin-top: 30px;
       max-width: 100%;
       text-align: center;
   }
@@ -831,7 +833,7 @@ body {
 }
 /*  CAROUSEL SECTION */
 /* TESTIMONIAL */
-.body-2{
+.body-2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -846,6 +848,7 @@ body {
   text-align: center;
   overflow: hidden;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 .testimonial-slider {
@@ -859,17 +862,19 @@ body {
   padding: 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  min-height: 400px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: left;
 }
 
 .testimonial-card h2 {
   font-size: 26px;
   font-weight: bold;
-  color: #000;
+  color: #d95373;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .testimonial-card p {
@@ -883,11 +888,13 @@ body {
   font-weight: bold;
   color: #d95373;
   margin-top: 10px;
+  text-align: left;
 }
 
 .testimonial-role {
   font-size: 16px;
   color: #999;
+  text-align: left;
 }
 
 .navigation-controls {
@@ -897,16 +904,20 @@ body {
   display: flex;
   justify-content: space-between;
   transform: translateY(-50%);
+  pointer-events: none;
 }
 
 .nav-button {
   background: #d95373;
   color: #fff;
-  padding: 50px 15px;
+  padding: 80px 15px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  position: absolute;
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-button:hover {
@@ -923,19 +934,30 @@ body {
 
 @media (max-width: 600px) {
   .testimonial-card {
-      padding: 30px;
-      min-height: 380px;
+    padding: 30px;
+    min-height: 380px;
   }
   .testimonial-card h2 {
-      font-size: 22px;
+    font-size: 22px;
   }
   .testimonial-card p {
-      font-size: 16px;
+    font-size: 16px;
+  }
+  .navigation-controls {
+    position: relative;
+    top: auto;
+    transform: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
   }
   .nav-button {
-      padding: 8px 12px;
+    padding: 10px 15px;
+    margin: 0 5px;
+    position: static;
   }
 }
+
 /* Footer section */
 .footer {
   background-color: #222;
