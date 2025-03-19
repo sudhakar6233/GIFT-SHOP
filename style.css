@@ -721,6 +721,9 @@ body {
       flex-direction: column;
       text-align: center;
   }
+  .gift-buy-btn{
+    margin-bottom: 30px;
+  }
   .gift-text-content, .gift-image-content {
     margin-top: 30px;
       max-width: 100%;
